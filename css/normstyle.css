@@ -44,6 +44,8 @@ h1 {
     width: 100%;
     text-align: center;
     position: sticky; 
+    top: 100px;
+    z-index: -1;
 }
 
 h2,h3 {
@@ -85,9 +87,15 @@ a {
     'wght' 400,
     'GRAD' 0,
     'opsz' 24
-  }
+}
+
+.list {
+    background-color: rgb(225, 100, 237); 
+    height: 2000px
+}
 
 section > span  {
+    background-color: rgb(229, 255, 0);
     top: 100px;
     position: sticky;
     color: blue;
@@ -95,4 +103,9 @@ section > span  {
     padding: 80px;
     display: inline-block;
     box-sizing: border-box;
+}
+
+.bottom {
+    background-color: rgb(225, 100, 237);
+    height: 200px;
 }
