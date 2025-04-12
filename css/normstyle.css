@@ -1,8 +1,10 @@
 body {
+    background-color: bisque;
     font-family: "Cabin", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
     font-variation-settings:"wdth" 100;
+    text-align: justify;
 }
 
 .overflow {
@@ -13,36 +15,7 @@ body {
     overflow: scroll;
     background: blueviolet;
     box-sizing: border-box; 
-    z-index: 1000;      
-}
-
-h1 {
-    color: blue;
-    padding: 200px 0px;
-    width: 100%;
-    text-align: center;
-    position: sticky; 
-}
-
-h2 {
-    color: rgb(255, 0, 200);
-    padding: 50px 0px;
-    text-align: center;
-    position: sticky; 
-    top: 100px;
-}
-
-div {
-    text-align: justify;
-    display: inline-block;
-}
-
-.left {
-    float: left;
-}
-
-.right {
-    float: right;
+    z-index: 10;      
 }
 
 p {
@@ -54,15 +27,72 @@ p {
     width: 25%;
     position: sticky; 
     top: 100px;
-    /* display: inline-block; */
     box-sizing: border-box;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+h1 {
+    color: blue;
+    padding: 200px 0px;
+    width: 100%;
+    text-align: center;
+    position: sticky; 
+}
+
+h2,h3 {
+    padding: 50px;
+    width: 50%;
+    text-align: center;
+    position: sticky; 
+    top: 100px;
+    display: inline-block;
+    box-sizing: border-box; 
+}
+
+h2 {
+    color: rgb(255, 166, 0);
+    float: left;
+    padding: 51px;
+}
+
+h3 {
+    color: rgb(102, 255, 0);
+    float: right;
 }
 
 .clearfix::after {
     content: "";
     clear: both;
     display: table;
-    box-sizing: border-box;    
+    box-sizing: border-box;       
 }
 
+a {
+    padding: 25px 0px 150px 45%;
+}
 
+.material-symbols-outlined {
+    color: rgb(255, 0, 170);
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+  }
+
+section > span  {
+    top: 100px;
+    position: sticky;
+    color: blue;
+    width: 100%;
+    padding: 80px;
+    display: inline-block;
+    box-sizing: border-box;
+}
